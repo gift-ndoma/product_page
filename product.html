@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Terra Balance Organic Cocoa – ethically sourced, rich in flavor, and perfect for healthy drinks and recipes. 100% organic and sustainably grown.">
+    <meta property="og:title" content="Terra Balance Organic Cocoa – Pure, Natural, and Sustainably Sourced">
+    <meta property="og:description" content="Discover Terra Balance Organic Cocoa – ethically sourced, rich in flavor, and perfect for healthy drinks and recipes. 100% organic and sustainably grown.">
+    <meta property="og:image" content="images/organic-cocoa-main.jpg">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://gift-ndoma.github.io/product_page/product.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Terra Balance">
+    <link rel="icon" href="images/logo.jpeg">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <script src="scripts/cart.js" defer></script>
+    <title>Terra Balance Organic Cocoa – Pure, Natural, and Sustainably Sourced</title>
+</head>
+<body>
+    <header>
+        <section>
+            <div>
+                <img src="images/logo.jpeg" alt="Terra Balance Logo">
+                <h1>Terra Balance Enterprises</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="cart"><a href="cart.html">🛒: <span id="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+            <ul>
+                <li><a href="index.html">Home</a> &gt;</li>
+                <li><a href="shop.html">Shop</a> &gt;</li>
+                <li>Organic Cocoa</li>
+            </ul>
+        </nav>
+        <section class="product-gallery">
+            <img id="mainImage" src="images/organic-cocoa-main.jpg" alt="Organic Cocoa Main Image" />
+
+            <div class="thumbnails">
+                <img src="images/organic-cocoa-thumb1.jpg" alt="Cocoa side view" onclick="changeImage('images/organic-cocoa-thumb1.jpg')" />
+                <img src="images/organic-cocoa-thumb2.jpg" alt="Cocoa packaging back" onclick="changeImage('images/organic-cocoa-thumb2.jpg')" />
+                <img src="images/organic-cocoa-thumb3.jpg" alt="Cocoa powder close-up" onclick="changeImage('images/organic-cocoa-thumb3.jpg')" />
+            </div>
+        </section>
+        <section>
+            <h1>Terra Balance Organic Cocoa</h1>
+            <p>⭐⭐⭐⭐⭐<a href="review.html">(48 Reviews)</a></p>
+            <p>₦12,000</p>
+            <button type="button">100% Organic</button>
+        </section>
+        <div class="quantity-selector">
+            <button type="button" onclick="decreaseQuantity()">−</button>
+            <input type="number" id="quantity" value="1" min="1" readonly>
+            <button type="button" onclick="increaseQuantity()">+</button>
+        </div>
+        <div>
+            <p>Indulge in the rich, authentic flavor of our Organic Cocoa — ethically harvested from sustainable farms, sun-dried, and finely ground to perfection. Ideal for hot chocolate, baking, smoothies, and more. No preservatives. Just pure, natural goodness.</p>
+        </div>
+        <div>
+            <button id="add_to_cart" type="button" onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div>
+            <button aria-label="Show product description">Description</button>
+            <button aria-label="Read customer reviews">Reviews (48)</button>
+            <button aria-label="View related products">Related Products</button>
+        </div>
+        <section>
+            <div>
+                <h2>Description</h2>
+                <p>Our Organic Cocoa is a delicious and nutritious choice for the health-conscious and eco-minded. Handpicked and minimally processed to retain its natural antioxidants, this cocoa powder is perfect for beverages and culinary creations. Fair-trade certified, eco-packaged, and full of rich chocolatey aroma.</p>
+            </div>
+            <div>
+                <h2>Customer Reviews</h2>
+                <section>
+                    <img src="" alt="Sarah Cook">
+                    <h3>Sarah Cook</h3>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>I’ve been using Terra Balance products for a few months now, and I can confidently say they’ve made a huge difference in how I feel daily.</p>
+                </section>
+                <section>
+                    <img src="" alt="Jane Doe">
+                    <h3>Jane Doe</h3>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>I’ve tried so many health brands in the past, but Terra Balance stands out. The ingredients are clean, and the customer service is top-notch.</p>
+                </section>
+            </div>
+            <div>
+                <h2>You May Also Like</h2>
+                <section class="related-products">
+                    <a href="plantain-chips.html">
+                        <figure>
+                            <img src="images/plantain-chips.jpg" alt="Organic Plantain Chips">
+                            <figcaption>Organic Plantain Chips – ₦3,500</figcaption>
+                        </figure>
+                    </a>
+                    <a href="cocoa-butter.html">
+                        <figure>
+                            <img src="images/cocoa-butter.jpg" alt="Raw Cocoa Butter">
+                            <figcaption>Raw Cocoa Butter (Unrefined) – ₦6,000</figcaption>
+                        </figure>
+                    </a>
+                    <a href="moringa-tea.html">
+                        <figure>
+                            <img src="images/moringa-tea.jpg" alt="Moringa Herbal Tea">
+                            <figcaption>Moringa Herbal Tea Bags – ₦4,200</figcaption>
+                        </figure>
+                    </a>
+                    <a href="lemongrass.html">
+                        <figure>
+                            <img src="images/lemongrass-pack.jpg" alt="Dried Lemongrass Leaves">
+                            <figcaption>Dried Lemongrass Leaves – ₦2,800</figcaption>
+                        </figure>
+                    </a>
+                    <a href="eco-bag.html">
+                        <figure>
+                            <img src="images/eco-bag.jpg" alt="Reusable Eco Bag">
+                            <figcaption>Reusable Eco Bag – ₦1,500</figcaption>
+                        </figure>
+                    </a>
+                    <a href="herbal-soap.html">
+                        <figure>
+                            <img src="images/herbal-soap.jpg" alt="Organic Herbal Soap">
+                            <figcaption>Organic Herbal Soap (Turmeric & Neem) – ₦3,000</figcaption>
+                        </figure>
+                    </a>
+                </section>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Terra Balance Enterprises. All rights reserved.</p>
+    </footer>
+</body>
+</html>
