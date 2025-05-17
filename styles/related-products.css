@@ -1,0 +1,62 @@
+:root {
+  --green: #4CAF50;
+  --dark-green: #388E3C;
+  --brown: #6B4F2C;
+  --light-brown: #A47551;
+  --beige: #F5F0E1;
+  --white: #fff;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+.related-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem 0;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.related-products a {
+    display: block; /* Makes the <a> behave like a block element */
+    background-color: var(--light-brown);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem 1.2rem 3rem;
+    box-shadow: 5px 5px 10px #00000053;
+    color: inherit; /* Ensures text inside links inherit default color */
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.related-products a:hover {
+    box-shadow: 0 4px 12px var(--shadow);
+}
+
+.related-products a:hover img {
+    filter: brightness(80%);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.related-products figure {
+    margin: 0;
+}
+
+.related-products img {
+    width: 100%;
+    height: 200px;
+}
+
+.related-products figcaption {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+.tab-content h2 {
+    text-align: center;
+    padding-top: 20px;
+}

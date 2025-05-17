@@ -11,12 +11,14 @@
 }
 
 body {
-  max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
   font-family: 'Segoe UI', sans-serif;
   background-color: var(--beige);
   color: #333;
+}
+
+main {
+  padding: 2rem;
 }
 
 /* Header */
@@ -26,7 +28,6 @@ header section {
   align-items: center;
   background-color: var(--white);
   padding: 1rem 2rem;
-  border-radius: 12px;
   box-shadow: 0 2px 6px var(--shadow);
   margin-bottom: 2rem;
 }
@@ -57,6 +58,7 @@ nav ul {
 }
 
 nav a {
+  font-size: 1.1rem;
   text-decoration: none;
   color: var(--dark-green);
   font-weight: bold;
@@ -94,6 +96,7 @@ nav a:hover {
     display: flex;
     gap: 5px;
     justify-content: center;
+
 }
 
 .product-gallery > img {
@@ -138,9 +141,9 @@ nav a:hover {
 }
 
 .details-profile .amount {
-    font-size: 1.5rem;
-    padding-top: 20px;
-    font-weight: 650;
+  font-size: 2rem;
+  padding-top: 20px;
+  font-weight: 650;
 }
 
 .organic-details {
@@ -195,24 +198,24 @@ nav a:hover {
   cursor: pointer;
 }
 
-.tabs {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 70px;
+.tab-contents {
+  background-color: var(--light-brown);
+  color: #fff;
+  padding: 40px;
+  margin-top: 50px;
 }
 
-.tabs button {
-  padding: 10px 90px;
-  width: 100%;
-  border: none;
-  font-size: 1.1rem;
-  background-color: var(--brown);
-  color: #fff;
-  border-right: 5px solid var(--dark-green);
-  border-bottom: 5px solid var(--dark-green);
-  border-bottom-right-radius: 20px;
-  border-top-left-radius: 20px;
+.tab-contents h2 {
+  text-align: center;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #fff;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+
+.tab-contents p {
+  font-size: 1.2rem;
 }
 
 
