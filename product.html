@@ -19,21 +19,29 @@
     <script src="scripts/review.js" defer></script>
     <script src="scripts/cart.js" defer></script>
     <script src="scripts/related.js" defer></script>
+    <script src="scripts/hamButton.js" defer></script>
     <title>Terra Balance Organic Cocoa – Pure, Natural, and Sustainably Sourced</title>
 </head>
 <body>
     <header>
         <section>
-            <div>
-                <img src="images/logo.jpeg" alt="Terra Balance Logo">
-                <h1>Terra Balance Enterprises</h1>
+            <div class="nav-flex">
+                <div class="navBtn" id="navBtn">
+                    <button id="hambutton" aria-label="Toggle Menu"></button>
+                </div>
+                <div class="heading">
+                    <img src="images/logo.jpeg" alt="Terra Balance Logo">
+                    <h1>Terra Balance Enterprises</h1>
+                </div>
+                <div class="cart-alone">
+                    <a href="cart.html">🛒:<span id="cart-count">0</span></a>
+                </div>
             </div>
-            <nav>
+            <nav id="main-nav" class="hidden">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="shop.html">Shop</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li class="cart"><a href="cart.html">🛒: <span id="cart-count">0</span></a></li>
                 </ul>
             </nav>
         </section>

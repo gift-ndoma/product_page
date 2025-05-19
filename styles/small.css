@@ -1,0 +1,116 @@
+@media (max-width: 1000px) {
+    header section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    #main-nav ul a {
+        padding-top: 10px;
+        border-top: 1px solid;
+        width: 100%;
+    }
+    
+    .navBtn {
+        display: block;
+    }
+
+    .navBtn button {
+        border: none;
+        background: none;
+        font-size: 1.8rem;
+    }
+
+    .navBtn button::before {
+        content: "☰";
+    }
+
+    .navBtn button.active::before {
+        content: "✕";
+    }
+
+    #main-nav {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.5s ease-out;
+    }
+
+    #main-nav ul {
+        overflow: hidden;
+    }
+
+    #main-nav.active {
+        grid-template-rows: 1fr;
+    }
+
+    .navBtn button:hover {
+        cursor: pointer;
+
+    }
+
+    .breadcrumb ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .product-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-gallery {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-gallery > img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    .heading h1 {
+        font-size: 1.2rem;
+    }
+
+    .cart-alone {
+        margin-right: -30px;
+        padding: 10px;
+    }
+
+    .navBtn button {
+        margin-right: 30px;
+    }
+
+    .heading img {
+        width: 40px;
+    }
+
+    .breadcrumb ul a{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .heading h1 {
+        font-size: 1rem;
+    }
+
+    .breadcrumb ul {
+        font-size: .8rem;
+    }
+
+    .breadcrumb ul a {
+        font-size: .8rem;
+    }
+
+    .thumbnails img {
+        width: 70px;
+        height: 50px;
+    }
+}

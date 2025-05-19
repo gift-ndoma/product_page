@@ -57,3 +57,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
   loadReviews(); // Always run this, regardless of form existence
 });
+
