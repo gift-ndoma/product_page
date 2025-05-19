@@ -71,11 +71,6 @@
     .product-gallery > img {
         width: 100%;
     }
-
-    .related-products img {
-        width: 100px;
-        height: auto;
-    }
 }
 
 @media (max-width: 650px) {
@@ -122,5 +117,14 @@
     .thumbnails {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .related-products a {
+        width: 200px;
+        height: auto;
+    }
+
+    .related-products a img {
+        height: 200px;
     }
 }
