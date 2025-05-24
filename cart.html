@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Cart – Terra Balance</title>
+  <link rel="stylesheet" href="styles/cart.css" />
+  <link rel="icon" href="images/logo.jpeg" />
+  <script src="scripts/cart-update.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="nav-flex">
+      <a href="index.html">
+        <img src="images/logo.jpeg" alt="Terra Balance Logo" class="logo" />
+      </a>
+      <h1>Your Cart</h1>
+      <a href="shop.html" class="back-to-shop">Continue Shopping</a>
+    </div>
+  </header>
+
+  <main class="cart-main">
+    <section class="cart-container">
+      <h2>Items in Your Cart</h2>
+      <p id="empty-cart-message" style="display:none;">Your cart is currently empty.</p>
+      <div id="cart-items" class="cart-items">
+        <!-- JavaScript dynamically inserts cart items here -->
+      </div>
+
+      <div id="checkout-section" class="cart-summary" style="display:none;">
+        <p><strong>Total:</strong> ₦<span id="total-amount">0</span></p>
+        <button class="checkout-btn" onclick="alert('Checkout not implemented yet')">Proceed to Checkout</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Terra Balance Enterprises. All rights reserved.</p>
+  </footer>
+</body>
+</html>
